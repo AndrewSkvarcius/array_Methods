@@ -87,5 +87,10 @@ function find(arr, value){
     })[0];
 };
 
+function findInObj(arr,key, value){
+    return arr.filter(function(val){
+        return val[key] === value;
+    })[0];
+};
 
 
