@@ -92,5 +92,23 @@ function findInObj(arr,key, value){
         return val[key] === value;
     })[0];
 };
+function removeVowels(str){
+const vowels = 'aeiou';
+return str.toLowerCase()
+.split("")
+.filter(function(val){
+    return vowels.indexOf(val) === -1;
+})
+.join("")
+};
+function doubleOddNumbers(arr){
+    return arr
+    .filter(function(val) {
+        return val % 2 !== 0;
+      })
+      .map(function(val) {
+        return val * 2;
+      });
+    }
 
 
